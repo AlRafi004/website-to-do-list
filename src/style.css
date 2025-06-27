@@ -1,0 +1,190 @@
+body {
+  /* Tambahkan background gradient yang lembut */
+  min-height: 100vh;
+  /*background: linear-gradient(135deg, #3281f8 0%, #c3cfe2 100%);*/
+  /* Atau gunakan gambar background jika diinginkan */
+  background: url("./images/bg-web2.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+section#section {
+  /* border: 1px solid #808080; */
+  border: none;
+  width: 60vw;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-text {
+  width: 100%;
+  padding-right: 0.5rem;
+}
+
+div#refresh {
+  padding-right: 0.25rem;
+}
+
+button.text-btn {
+  border: none;
+  background: none;
+}
+
+div.title,
+div.form-text,
+li.checkbox,
+button.clear {
+  border: 1px solid #80808021;
+  padding: 0.5rem 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #3281f8 0%, #56e0e0 100%);
+  color: #fff;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: 0 4px 12px rgba(50, 129, 248, 0.1);
+  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  gap: 1rem;
+}
+
+span.inputs {
+  display: flex;
+  width: 100%;
+}
+
+input[type="text"] {
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+input:checked + input {
+  text-decoration: line-through;
+  color: #ccc;
+  font-style: italic;
+}
+
+.new,
+.form-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.list li:nth-child(2n + 1) {
+  background-color: #eee;
+}
+
+button.clear {
+  background: linear-gradient(90deg, #3281f8 0%, #56e0e0 100%);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 2px 8px rgba(50, 129, 248, 0.08);
+  padding: 1rem 0;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+}
+button.clear:hover {
+  background: linear-gradient(90deg, #56e0e0 0%, #3281f8 100%);
+  color: #e0e0e0;
+}
+
+img {
+  width: 3vw;
+}
+
+.title p {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 0;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.08);
+  animation: slideInLeft 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  flex: 1;
+  text-align: center;
+}
+
+#refresh {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  padding: 0.7rem;
+  transition: background 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(50, 129, 248, 0.08);
+  margin-left: auto;
+}
+#refresh:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.title * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+p.error-message {
+  color: #f00;
+  display: none;
+  border: solid;
+}
+
+.add-btn {
+  color: #fff !important;
+  transition: color 0.2s;
+}
+.add-btn:hover {
+  color: #e0e0e0 !important;
+}
+
+.fa-trash-can {
+  color: #fff !important;
+  transition: color 0.2s;
+}
+.fa-trash-can:hover {
+  color: #e57373 !important;
+}
+
+.footer-credit {
+  position: fixed;
+  left: 2vw;
+  bottom: 1.5vh;
+  color: #ffffff;
+  font-size: 1rem;
+  opacity: 0.85;
+  letter-spacing: 1px;
+  z-index: 10;
+  font-family: inherit;
+  text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.18);
+}
