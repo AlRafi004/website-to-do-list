@@ -7,7 +7,6 @@ A simple and modern ToDo List web application built using HTML, CSS, JavaScript,
 - ✅ Add new tasks  
 - 🗑️ Delete existing tasks  
 - ✔️ Mark tasks as completed  
-- 🌙 Dark/light mode toggle  
 - 🔄 Tasks saved to local storage  
 - 📱 Fully responsive design (mobile & desktop)  
 - 🎨 Built with Tailwind CSS for styling  
