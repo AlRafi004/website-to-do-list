@@ -14,7 +14,7 @@ A simple and modern ToDo List web application built using HTML, CSS, JavaScript,
 
 ## 📸 Preview
 
-![ToDoList App Screenshot](./Screenshot%202025-06-28%20112333.png)
+![ToDoList App Screenshot](./assets/Screenshot 2025-06-28 112333.png)
 
 ## 🛠️ Built With
 
