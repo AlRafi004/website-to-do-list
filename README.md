@@ -31,7 +31,7 @@ ToDoList-App-main/
 ├── style.css           # Custom styles
 ├── script.js           # Main JavaScript logic
 ├── tailwind.config.js  # Tailwind configuration
-├── Screenshot 2025-06-28 112333.png  # App UI preview
+├── assets              # App UI preview
 └── README.md           # Project documentation
 ```
 
